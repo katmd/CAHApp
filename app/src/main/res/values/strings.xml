@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calvin and Hobbes Enhance-O-Tron</string>
+    <string name="go_comic_random_text">Jump right in with a random comic!</string>
+    <string name="go_back_last_comic_text">Let\'s take you back to where you left off.</string>
+    <string name="go_to_website_text">Visit the Official Website!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

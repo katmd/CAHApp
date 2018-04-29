@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Action bar color is NOT used -->
+    <color name="colorPrimary">#F9A825</color>
+
+    <!-- Notification bar color -->
+    <color name="colorPrimaryDark">#F57F17</color>
+
+    <!-- Accent color -->
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFF7DA</color>
+
+    <!-- Standard text color -->
+    <color name="standard_text_color">#F9A825</color>
+</resources>
