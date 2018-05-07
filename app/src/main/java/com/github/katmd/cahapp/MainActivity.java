@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent officialWebsiteIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.calvinandhobbes.com/") );
                 if (officialWebsiteIntent.resolveActivity(getPackageManager()) != null) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.go_to_website_toast), Toast.LENGTH_LONG).show();
                     startActivity(officialWebsiteIntent);
                 }
             }
