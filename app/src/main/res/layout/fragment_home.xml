@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context="com.github.katmd.cahapp.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/title_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/image_button_choices" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ch_home_crop"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/image_button_choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/go_comic_random"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="#000000"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:cropToPadding="true"
+                android:src="@drawable/lets_go_exploring_crop" />
+
+            <TextView
+                style="@style/StandardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/go_comic_random_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/go_back_last_comic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                style="?android:attr/borderlessButtonStyle"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="#000000"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:cropToPadding="true"
+                android:src="@drawable/time_machine_crop" />
+
+            <TextView
+                style="@style/StandardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/go_back_last_comic_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/go_to_website"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                style="?android:attr/borderlessButtonStyle"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="#000000"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:cropToPadding="true"
+                android:src="@drawable/log_crop" />
+
+            <TextView
+                style="@style/StandardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="@string/go_to_website_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
