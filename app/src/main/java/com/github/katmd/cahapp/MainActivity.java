@@ -1,34 +1,31 @@
 package com.github.katmd.cahapp;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.design.widget.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the Official Website ImageButton
-        ImageButton officialWebsite = (ImageButton) findViewById(R.id.go_to_website);
+        // Find the view pager that will allow the user to select between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        // Set click listener on the Official Website ImageButton
-        officialWebsite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent officialWebsiteIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.calvinandhobbes.com/") );
-                if (officialWebsiteIntent.resolveActivity(getPackageManager()) != null) {
-                    Toast.makeText(getApplicationContext(), getString(R.string.go_to_website_toast), Toast.LENGTH_LONG).show();
-                    startActivity(officialWebsiteIntent);
-                }
-            }
-        });
+        // Create an adapter that knows which fragment should be shown on each page
+        FragmentPagerAdapter adapter = new FragmentPagerAdapter(this, getSupportFragmentManager());
+
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
+
+        // Create tab layout for fragments and connect with view pager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+
     }
 }

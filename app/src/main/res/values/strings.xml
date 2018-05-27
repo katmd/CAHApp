@@ -3,8 +3,8 @@
     <string name="go_comic_random_text">Jump right in with a random comic!</string>
     <string name="go_back_last_comic_text">Let\'s take you back to where you left off.</string>
     <string name="go_to_website_text">Visit the Official Website!</string>
-    <string name="go_to_website_toast">"Redirecting to Official Website"</string>
-
-    <!-- Comic Viewer fragment name -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_website_toast">Redirecting to Official Website</string>
+    <string name="error_go_to_website_toast">Error: Could not redirect to Official Website</string>
+    <string name="home">Home</string>
+    <string name="comic_viewer">Comic Viewer</string>
 </resources>
