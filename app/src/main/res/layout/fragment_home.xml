@@ -1,41 +1,41 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/tan_background"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="16dp"
     tools:context="com.github.katmd.cahapp.HomeFragment">
 
-    <RelativeLayout
+    <ImageView
         android:id="@+id/title_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/image_button_choices" >
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="centerInside"
-            android:src="@drawable/ch_home_crop"/>
-
-    </RelativeLayout>
+        android:layout_height="75dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ch_home_crop"/>
 
     <LinearLayout
         android:id="@+id/image_button_choices"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="16dp"
-        android:layout_centerVertical="true"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <TextView
+                style="@style/StandardTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/random_title_text" />
 
             <ImageButton
                 android:id="@+id/go_comic_random"
@@ -52,19 +52,27 @@
 
             <TextView
                 style="@style/StandardText"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="8dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/go_comic_random_text" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <TextView
+                style="@style/StandardTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/return_title_text" />
 
             <ImageButton
                 android:id="@+id/go_back_last_comic"
@@ -81,19 +89,27 @@
 
             <TextView
                 style="@style/StandardText"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/go_back_last_comic_text" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <TextView
+                style="@style/StandardTitleText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/website_title_text" />
 
             <ImageButton
                 android:id="@+id/go_to_website"
@@ -110,14 +126,13 @@
 
             <TextView
                 style="@style/StandardText"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="16dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/go_to_website_text" />
         </LinearLayout>
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

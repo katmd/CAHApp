@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Calvin and Hobbes Enhance-O-Tron</string>
+    <string name="random_title_text">RANDOM</string>
     <string name="go_comic_random_text">Jump right in with a random comic!</string>
+    <string name="return_title_text">RETURN</string>
     <string name="go_back_last_comic_text">Let\'s take you back to where you left off.</string>
+    <string name="website_title_text">WEBSITE</string>
     <string name="go_to_website_text">Visit the Official Website!</string>
     <string name="go_to_website_toast">Redirecting to Official Website</string>
     <string name="error_go_to_website_toast">Error: Could not redirect to Official Website</string>

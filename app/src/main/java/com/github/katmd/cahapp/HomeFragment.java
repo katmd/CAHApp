@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * A {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
 

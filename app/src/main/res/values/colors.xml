@@ -12,6 +12,9 @@
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
 
+    <!-- Standard title text color -->
+    <color name="standard_title_text_color">#F57F17</color>
+
     <!-- Standard text color -->
     <color name="standard_text_color">#F9A825</color>
 </resources>
