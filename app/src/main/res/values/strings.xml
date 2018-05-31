@@ -8,6 +8,7 @@
     <string name="go_to_website_text">Visit the Official Website!</string>
     <string name="go_to_website_toast">Redirecting to Official Website</string>
     <string name="error_go_to_website_toast">Error: Could not redirect to Official Website</string>
+    <string name="error_load_image_toast">Error: Could not load image</string>
     <string name="home">Home</string>
     <string name="comic_viewer">Comic Viewer</string>
 </resources>
